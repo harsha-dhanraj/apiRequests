@@ -5,7 +5,7 @@ var temp = fs.readFileSync("/sys/class/thermal/thermal_zone0/temp");
 var temp_c = (temp/1000).toString()+"°C";
 var payload={
     name:"IPC302",
-    type:"DEATH HANG..!!",
+    type:"DEATH HANG.GG.!!",
     owners:["YAMRAJ","JUDGE SAHAB"],
     cpuTemp: temp_c,
     timestamp: moment().format('llll')
@@ -23,10 +23,10 @@ var connOpt={
 
 request(connOpt,(err,res,body)=>{
 
-    if(body.success)
+    if(body.success){
         console.log("Device is registered successfully");
         console.log(body.device);
-    else {
+    }else {
         console.log(body.msg);	
     }	
 });

@@ -4,11 +4,11 @@ const moment = require("moment");
 var temp = fs.readFileSync("/sys/class/thermal/thermal_zone0/temp");
 var temp_c = (temp/1000).toString()+"°C";
 var payload={    
-    type:"DEATH HANGGGGG..!!",    
+    type:"DEATH HANG..!!",    
 }
 
 var connOpt={
-    url:"http://localhost:3000/find",
+    url:"http://localhost:3000/find_by_type",
     method:'POST',
     headers:{
         'content-Type':'application/json'
